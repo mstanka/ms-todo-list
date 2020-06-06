@@ -1,13 +1,31 @@
 :root {
   --primary-color: #f9bc60;
   --secondary-color: #004643;
+  --tertially-color: #abd1c6;
   --neutral-dark: #232946;
   --neutral-light:  #e6e5e5;
+}
+
+*, 
+*:before, 
+*:after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 2rem;
+  background: var(--tertially-color);
 }
 
 .container {
   width: 300px;
   font-family: 'Open Sans', sans-serif;
+  background: var(--neutral-light);
   border: 2px solid var(--primary-color);
   border-radius: 1rem;
   box-shadow: 1px 1px 8px var(--neutral-dark);
@@ -47,6 +65,14 @@
   padding: 2rem 0;
 }
 
+h1 {
+  text-transform: uppercase;
+  text-align: center;
+  padding-bottom: 1rem;
+  font-size: 1.5rem;
+  color: var(--secondary-color);
+}
+
 ul {
   padding: 0 1rem;
   margin: 0;
@@ -63,6 +89,11 @@ ul {
 
 .fa-check-circle {
   color: var(--secondary-color);
+  cursor: pointer;
+}
+
+.far {
+  cursor: pointer;
 }
 
 .lineThrough {
